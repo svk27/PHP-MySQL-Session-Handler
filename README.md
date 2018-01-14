@@ -16,7 +16,7 @@ composer require "programster/mysql-session-handler"
 
 ## How to use
 
-It may be easiest just to watch this [Youtube demonstration video](https://www.youtube.com/watch?v=avRhoo6DGA0).
+It may be easiest just to watch this [Youtube demonstration video](https://youtu.be/avRhoo6DGA0).
 
 Below is a script demonstrating how to use this tool.
 
