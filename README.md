@@ -16,24 +16,23 @@ composer require "programster/mysql-session-handler"
 
 ## How to use
 
-```sql
-CREATE TABLE IF NOT EXISTS `my_sessions_table` (
-    `id` varchar(32) NOT NULL,
-    `timestamp` int(10) unsigned DEFAULT NULL,
-    `data` mediumtext,
-    PRIMARY KEY (`id`),
-    KEY `timestamp` (`timestamp`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-```
-
 ```sh
 require 'vendor/autoload.php';
 
+# Create your MySQL database connection
 $db = new mysqli('localhost', 'username', 'password', 'database');
+
+# Create the session handler using that connection and pass it the name of the table
+# The handler will try to create it if it doesn't already exist.
 $handler = new \Programster\SessionHandler\SessionHandler($db, 'my_sessions_table');
+
+# Tell PHP to use the handler we just created.
 session_set_save_handler($handler, true);
+
+# Start your session
 session_start();
+
+# Set a session variable.
 $_SESSION['my_session_variable'] = 'some data here';
 
 ```
