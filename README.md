@@ -48,8 +48,8 @@ $_SESSION['my_session_variable'] = 'some data here';
 
 ## Authors
 
-[Programster](https://github.com/Programster)
-[Jamie Cressey](https://github.com/JamieCressey)
+* [Programster](https://github.com/Programster)
+* [Jamie Cressey](https://github.com/JamieCressey)
 
 ## License
 
