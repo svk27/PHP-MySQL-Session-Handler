@@ -8,7 +8,7 @@ This repository contains a custom PHP session handler using MySQL as a backend.
 
 Install composer if you haven't already ([Linux instructions](http://blog.programster.org/ubuntu-install-composer)).
 
-Navigate to your project's directory (where your `composer.json` file will be or is maintained), and run the following command:
+Navigate to your project's directory and run the following command:
     
 ```bash
 composer require "programster/mysql-session-handler"
