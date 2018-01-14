@@ -43,7 +43,7 @@ $_SESSION['my_session_variable'] = 'some data here';
 The tool will try to use the database connection to create the sessions table if it doesn't already exist. If you provide the handler with user credentials that haven't been granted the rights to create tables, you can manually create the table with the following SQL statement:
 
 ```sql
-CREATE TABLE IF NOT EXISTS `sesssions` (
+CREATE TABLE IF NOT EXISTS `sessions` (
     `id` varchar(32) NOT NULL,
     `modified_timestamp` timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `data` mediumtext,
