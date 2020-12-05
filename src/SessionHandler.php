@@ -53,7 +53,12 @@ final class SessionHandler implements \SessionHandlerInterface
         $sql = "SELECT `data` FROM `{$this->dbTable}` WHERE `id` = '{$id}'";
         $result = $this->dbConnection->query($sql);
 
-        if ($result === FALSE)
+        if ($result === false)
+        {
+            throw new \Exception("There is an issue with your session handler using MySQL.");
+        }
+
+        if ($result->num_rows === 0)
         {
             $result = "";
         }
