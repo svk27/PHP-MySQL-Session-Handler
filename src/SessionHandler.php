@@ -16,7 +16,8 @@ final class SessionHandler implements \SessionHandlerInterface
      * @param string $tableName - the table within the database to store session data in.
      * @param int $maxAge - the maximum age in seconds of a session variable.
      */
-    public function __construct(\mysqli $mysqli, string $tableName, int $maxAge=86400)
+    // 86400=1D 14400=4H 28800=8H 43200=12H
+    public function __construct(\mysqli $mysqli, string $tableName, int $maxAge=14400)
     {
         $this->dbConnection = $mysqli;
         $this->dbTable = $tableName;
