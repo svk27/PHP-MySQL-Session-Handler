@@ -1,6 +1,6 @@
 <?php
 
-namespace Programster\SessionHandler;
+namespace SekureSessions\SessionHandler;
 
 
 final class SessionHandler implements \SessionHandlerInterface
