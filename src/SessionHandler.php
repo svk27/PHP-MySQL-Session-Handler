@@ -55,7 +55,7 @@ final class SessionHandler implements \SessionHandlerInterface
 
         if ($result === false)
         {
-            throw new \Exception("There is an issue with your session handler using MySQL.");
+            throw new \Exception("There is an issue with your SekureSessions session handler.");
         }
 
         if ($result->num_rows === 0)
