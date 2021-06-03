@@ -1,7 +1,7 @@
 {
     "name": "svk27/mysql-session-handler",
     "type": "library",
-    "description": "MySQL PHP Session Handler - Custom Use",
+    "description": "MySQL PHP Session Handler - Custom Use - SekureSessions",
     "homepage": "https://github.com/svk27/PHP-MySQL-Session-Handler",
     "license": "MIT",
     "authors": [
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Programster\\SessionHandler\\": "src/"
+            "SekureSessions\\SessionHandler\\": "src/"
         }
     }
 }
