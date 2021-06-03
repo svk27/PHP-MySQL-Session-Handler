@@ -1,9 +1,8 @@
 {
-    "name": "programster/mysql-session-handler",
+    "name": "svk27/mysql-session-handler",
     "type": "library",
-    "description": "MySQL PHP Session Handler",
-    "keywords": ["php", "mysql", "sessions"],
-    "homepage": "https://github.com/programster/PHP-MySQL-Session-Handler",
+    "description": "MySQL PHP Session Handler - Custom Use",
+    "homepage": "https://github.com/svk27/PHP-MySQL-Session-Handler",
     "license": "MIT",
     "authors": [
         {
@@ -15,6 +14,11 @@
             "name": "Stuart Page (aka Programster)",
             "email": "sdpagent@gmail.com",
             "homepage": "https://github.com/programster"
+        },
+        {
+            "name": "Souvik Ghosh",
+            "email": "hello@souvikghosh.com",
+            "homepage": "https://souvikghosh.com/"
         }
     ],
     "require": {
